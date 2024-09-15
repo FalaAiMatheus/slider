@@ -1,3 +1,5 @@
 <template>
-  <h1>Hello World</h1>
+  <RouterLink to="/">Home</RouterLink>
+  <RouterLink to="/slides">Slides</RouterLink>
+  <RouterView />
 </template>
