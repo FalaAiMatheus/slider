@@ -1,5 +1,8 @@
+<script setup>
+import Header from "./components/Header.vue";
+</script>
+
 <template>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/slides">Slides</RouterLink>
+  <Header />
   <RouterView />
 </template>
