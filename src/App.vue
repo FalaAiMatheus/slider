@@ -1,8 +1,5 @@
-<script setup>
-import Header from "./components/Header.vue";
-</script>
-
 <template>
-  <Header />
-  <RouterView />
+  <main class="flex flex-col items-center">
+    <RouterView />
+  </main>
 </template>
