@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 import Card from "../../components/Card/card.vue";
 import Header from "../../components/header.vue";
 </script>
@@ -39,7 +39,7 @@ import Header from "../../components/header.vue";
   </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { Ref, ref } from "vue";
 import { CardProps } from "../../core/types";
 import supabase from "../../services/supabase.service";
