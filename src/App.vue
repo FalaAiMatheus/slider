@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col items-center">
+  <main>
     <RouterView />
   </main>
 </template>
