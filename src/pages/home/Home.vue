@@ -19,8 +19,15 @@ import Header from "../../components/header.vue";
 
 <script>
 import { ref } from "vue";
+import supabase from "../../services/supabase.service";
 const card = ref(Array.from({ length: 45 }));
 const actualDate = ref(
   new Date().toLocaleDateString("pt-BR", { timeZone: "UTC" })
 );
+
+const supabaseClient = async () => {
+  const client = supabase.from("presentations").select("*");
+  return (await client).data
+};
+
 </script>
