@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import Header from "../../components/Header.vue";
 import Card from "../../components/Card/Card.vue";
 </script>
