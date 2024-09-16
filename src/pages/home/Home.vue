@@ -1,8 +1,3 @@
-<script lang="ts">
-import Header from "../../components/Header.vue";
-import Card from "../../components/Card/Card.vue";
-</script>
-
 <template>
   <Header />
   <section class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4">
@@ -40,6 +35,8 @@ import Card from "../../components/Card/Card.vue";
 </template>
 
 <script setup lang="ts">
+import Card from "@/components/Card/Card.vue";
+import Header from "@/components/Header.vue";
 import { Ref, ref } from "vue";
 import { CardProps } from "../../core/types";
 import supabase from "../../services/supabase.service";
