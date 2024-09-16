@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Card from "../../components/Card/card.vue";
-import Header from "../../components/header.vue";
+import Card from "../../components/Card.vue";
+import Header from "../../components/Header.vue";
 </script>
 
 <template>

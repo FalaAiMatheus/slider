@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/core/types/database.types.ts","./src/core/types/index.ts","./src/routes/index.ts","./src/services/supabase.service.ts","./src/app.vue","./src/components/card.vue","./src/components/header.vue","./src/pages/home/home.vue","./src/pages/slides/slides.vue"],"version":"5.6.2"}
