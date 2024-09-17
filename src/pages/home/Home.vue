@@ -17,6 +17,7 @@ import Header from "../../components/Header.vue";
       "
       :locale="presentation.locale"
       :description="presentation.description"
+      :slug="presentation.slug ?? ''"
     />
     <div v-if="loading" role="status">
       <svg

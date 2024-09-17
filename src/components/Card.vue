@@ -1,7 +1,7 @@
 <template>
   <div
     :key="id"
-    class="max-w-sm flex flex-col space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-lg shadow-sm"
+    class="max-w-sm flex flex-col justify-between space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-lg shadow-sm"
   >
     <h5 class="text-2xl font-bold tracking-tight text-slate-900">
       {{ slideTitle }}
@@ -18,7 +18,7 @@
       {{ description }}
     </p>
     <router-link
-      :to="{ name: 'slides', params: { id: id } }"
+      :to="{ name: 'slides', params: { slug: slug } }"
       class="px-3 py-2 text-sm font-medium self-start text-center text-slate-50 bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus: ring-offset-blue-600 transition-all"
     >
       Ver Slide
@@ -34,5 +34,6 @@ defineProps({
   date: String,
   locale: String,
   description: String,
+  slug: String
 });
 </script>

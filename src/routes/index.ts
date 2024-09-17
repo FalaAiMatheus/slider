@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../pages/home/Home.vue";
-import Slides from "../pages/slides/Slides.vue";
+import SlideLoader from "../components/SlideLoader.vue";
+
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/slides/:id", name: "slides", component: Slides },
+  { path: "/slides/:slug", name: "slides", component: SlideLoader },
 ];
 
 const router = createRouter({

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Slider from "../../components/Slider.vue";
+import SlideLoader from "../../components/SlideLoader.vue";
 </script>
 
 <template>
-  <Slider />
+  <SlideLoader />
 </template>

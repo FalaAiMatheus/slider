@@ -1,7 +1,7 @@
 <script setup>
 import emblaCarouselVue from "embla-carousel-vue";
 import { onMounted, onUnmounted } from "vue";
-import SlideIntroduction from "./slider/SlideIntroduction.vue";
+import SliderIntroduction from "../components/slider/SlideIntroduction.vue";
 
 const [emblaRef, emblaApi] = emblaCarouselVue({
   loop: true,
@@ -30,7 +30,7 @@ onUnmounted(() => {
 <template>
   <div class="embla" ref="emblaRef">
     <div class="embla__container">
-      <SlideIntroduction />
+      <SliderIntroduction />
       <div
         class="embla__slide bg-slate-100 flex items-center flex-col justify-start space-y-10 text-center p-4"
       >
