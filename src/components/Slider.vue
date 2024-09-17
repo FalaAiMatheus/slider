@@ -1,7 +1,7 @@
 <script setup>
 import emblaCarouselVue from "embla-carousel-vue";
 import { onMounted, onUnmounted } from "vue";
-import NodeLogo from "../assets/NodeLogo.vue";
+import SlideIntroduction from "./slider/SlideIntroduction.vue";
 
 const [emblaRef, emblaApi] = emblaCarouselVue({
   loop: true,
@@ -30,33 +30,24 @@ onUnmounted(() => {
 <template>
   <div class="embla" ref="emblaRef">
     <div class="embla__container">
+      <SlideIntroduction />
       <div
-        class="embla__slide bg-slate-100 flex items-center flex-col justify-center space-y-10 text-center p-4"
+        class="embla__slide bg-slate-100 flex items-center flex-col justify-start space-y-10 text-center p-4"
       >
-        <h1 class="text-5xl lg:text-7xl font-bold max-w-screen-xl">
-          Desenrolando Frameworks Node: Qual escolher?
-        </h1>
-        <p class="text-2xl lg:text-3xl font-medium">
-          Express, Fastify, Nest e Adonis. Afinal, qual framework escolher para
-          sua aplicação Node ?
-        </p>
-        <NodeLogo />
-      </div>
-      <div
-        class="embla__slide bg-slate-100 flex items-center flex-col justify-center space-y-10 text-center p-4"
-      >
-        <h1 class="text-5xl lg:text-7xl font-bold max-w-screen-xl">
-          Desenrolando Frameworks Node: Qual escolher?
-        </h1>
-        <p class="text-2xl lg:text-3xl font-medium">
-          Express, Fastify, Nest e Adonis. Afinal, qual framework escolher para
-          sua aplicação Node ?
-        </p>
-      </div>
-      <div
-        class="embla__slide bg-slate-100 flex items-center flex-col justify-center space-y-10 text-center p-4"
-      >
-        Slide 3
+        <div
+          class="flex flex-col items-start justify-center max-w-screen-2xl w-full space-y-3 mt-32 p-4"
+        >
+          <h2 class="text-3xl lg:text-2xl font-medium max-w-screen-xl">
+            Quem é tu?
+          </h2>
+          <div class="flex flex-col space-y-10">
+            <h3 class="text-6xl font-bold">Matheus França</h3>
+            <ul class="flex flex-col gap-4 items-start font-medium text-2xl">
+              <li>Desenvolvedor Front End</li>
+              <li>Made in Itaitinga</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
