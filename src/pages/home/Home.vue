@@ -43,20 +43,22 @@ import Header from "../../components/Header.vue";
 <script lang="ts">
 import { Ref, ref } from "vue";
 import { CardProps } from "../../core/types";
-import supabase from "../../services/supabase.service";
 
 const cards: Ref<CardProps[]> = ref([]);
 const loading: Ref<boolean> = ref(false);
-const errorMessage: Ref<string | null> = ref("");
 
 const fetchData = async () => {
   try {
     loading.value = true;
-    const { data, error } = await supabase.from("presentations").select("*");
+    const response = await fetch(
+      "https://slider-back.onrender.com/presentations",
+      {
+        method: "GET",
+      }
+    );
 
-    if (error) {
-      errorMessage.value = error.message;
-    }
+    const data = await response.json();
+
     cards.value = data || [];
     loading.value = false;
   } catch (error) {
