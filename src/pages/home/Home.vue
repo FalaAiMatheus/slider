@@ -5,7 +5,9 @@ import Header from "../../components/Header.vue";
 
 <template>
   <Header />
-  <section class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4">
+  <section
+    class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4 h-screen"
+  >
     <Card
       v-for="presentation in cards"
       :id="presentation.id"

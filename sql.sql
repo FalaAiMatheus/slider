@@ -19,6 +19,5 @@
     for SELECT
     to public
     using (
-    7
     true
     );

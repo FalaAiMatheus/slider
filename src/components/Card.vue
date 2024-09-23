@@ -1,7 +1,7 @@
 <template>
   <div
     :key="id"
-    class="max-w-sm flex flex-col justify-between space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-lg shadow-sm"
+    class="max-w-sm flex flex-col justify-between space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-lg shadow-sm h-64"
   >
     <h5 class="text-2xl font-bold tracking-tight text-slate-900">
       {{ slideTitle }}
@@ -34,6 +34,6 @@ defineProps({
   date: String,
   locale: String,
   description: String,
-  slug: String
+  slug: String,
 });
 </script>

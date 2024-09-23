@@ -3,7 +3,7 @@ import { GithubIcon, Linkedin } from "lucide-vue-next";
 </script>
 
 <template>
-  <footer class="w-full border-t border-b-slate-800/5 p-4 absolute bottom-0">
+  <footer class="w-full border-t border-b-slate-800/5 p-4 bg-gray-50">
     <section class="flex justify-between flex-wrap items-center gap-4">
       <span class="font-light text-gray-400">Developed by FalaAiMatheus</span>
       <div class="flex items-center gap-2 flex-wrap justify-start">
