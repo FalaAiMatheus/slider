@@ -5,9 +5,7 @@ import Header from "../../components/Header.vue";
 
 <template>
   <Header />
-  <section
-    class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4"
-  >
+  <section class="flex max-w-screen-xl flex-wrap justify-center gap-6 p-4">
     <Card
       v-for="presentation in cards"
       :id="presentation.id"
@@ -23,7 +21,6 @@ import Header from "../../components/Header.vue";
     />
     <Loader :loading="loading" />
   </section>
-  
 </template>
 
 <script lang="ts">

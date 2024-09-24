@@ -1,16 +1,16 @@
 <template>
   <div
     :key="id"
-    class="max-w-sm flex flex-col justify-between bg-white border space-y-2 p-4 rounded-lg h-64"
+    class="flex h-64 max-w-sm flex-col justify-between space-y-2 rounded-lg border bg-white p-4"
   >
     <h5 class="text-2xl font-bold tracking-tight text-gray-950">
       {{ slideTitle }}
     </h5>
-    <div class="flex gap-1 items-center text-gray-400 text-sm">
+    <div class="flex items-center gap-1 text-sm text-gray-400">
       <Calendar />
       <span>{{ date }}</span>
     </div>
-    <div class="flex gap-1 items-center text-gray-400 text-sm">
+    <div class="flex items-center gap-1 text-sm text-gray-400">
       <MapPinned />
       <span>{{ locale }}</span>
     </div>
@@ -19,7 +19,7 @@
     </p>
     <router-link
       :to="{ name: 'slides', params: { slug: slug } }"
-      class="px-3 py-2 text-sm font-medium self-start text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus: ring-offset-blue-600 transition-all"
+      class="focus: self-start rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white ring-offset-blue-600 transition-all hover:bg-blue-800 focus:outline-none focus:ring-2"
     >
       Ver Slide
     </router-link>
