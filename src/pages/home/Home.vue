@@ -6,7 +6,7 @@ import Header from "../../components/Header.vue";
 <template>
   <Header />
   <section
-    class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4 h-screen"
+    class="flex justify-center flex-wrap max-w-screen-xl gap-6 p-4"
   >
     <Card
       v-for="presentation in cards"
@@ -23,12 +23,11 @@ import Header from "../../components/Header.vue";
     />
     <Loader :loading="loading" />
   </section>
-  <Footer />
+  
 </template>
 
 <script lang="ts">
 import { Ref, ref } from "vue";
-import Footer from "../../components/Footer.vue";
 import Loader from "../../components/Loader.vue";
 import { CardProps } from "../../core/types";
 
@@ -38,14 +37,11 @@ const loading: Ref<boolean> = ref(false);
 const fetchData = async () => {
   try {
     loading.value = true;
-    const response = await fetch(
-      "https://slider-back.onrender.com/presentations",
-      {
-        method: "GET",
-      }
-    );
-
-    const data = await response.json();
+    const data = await fetch("https://slider-back.onrender.com/presentations", {
+      method: "GET",
+    }).then((data) => {
+      return data.json();
+    });
 
     cards.value = data || [];
     loading.value = false;

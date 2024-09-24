@@ -19,7 +19,7 @@ export default {
       try {
         slideComponent.value = (await import(`../slides/${slug}.vue`)).default;
       } catch (error) {
-        alert(`Slide com slug ${slug} não encontrado`);
+        alert(`Slide não encontrado`);
         router.push("/");
       }
     });
