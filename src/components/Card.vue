@@ -1,9 +1,9 @@
 <template>
   <div
     :key="id"
-    class="flex h-64 max-w-sm flex-col justify-between space-y-2 rounded-lg border bg-white p-4"
+    class="flex h-72 max-w-sm flex-col justify-between space-y-2 rounded-lg border bg-white p-4 dark:bg-zinc-950 dark:border-zinc-700"
   >
-    <h5 class="text-2xl font-bold tracking-tight text-gray-950">
+    <h5 class="text-2xl font-bold tracking-tight dark:text-white text-gray-950">
       {{ slideTitle }}
     </h5>
     <div class="flex items-center gap-1 text-sm text-gray-400">
@@ -14,7 +14,7 @@
       <MapPinned />
       <span>{{ locale }}</span>
     </div>
-    <p class="text-gray-700">
+    <p class="text-gray-700 dark:text-gray-400">
       {{ description }}
     </p>
     <router-link
